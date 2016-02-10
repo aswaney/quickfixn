@@ -1,5 +1,10 @@
-Receiving Messages
-==================
+---
+layout: page
+title: Receiving Messages
+menu_title: Receiving Messages
+type: tutorial
+weight: 6
+---
 
 Receiving messages in QuickFIX/N is type safe and simple:
 

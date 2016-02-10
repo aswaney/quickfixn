@@ -1,5 +1,10 @@
-Repeating Groups
-================
+---
+layout: page
+title: Repeating Groups
+menu_title: Repeating Groups
+type: tutorial
+weight: 8
+---
 
 QuickFIX/N creates and reads repeating groups in FIX messages.
 

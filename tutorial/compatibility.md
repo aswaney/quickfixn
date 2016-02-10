@@ -1,3 +1,11 @@
+---
+layout: page
+title: QuickFIX .NET Wrapper Compatibility
+menu_title: QuickFIX .NET Wrapper Compatibility
+type: tutorial
+weight: 16
+---
+
 QuickFIX .NET wrapper compatibility
 ===================================
 
@@ -51,4 +59,4 @@ If we missed anything, [let us know][1]
 
 [0]: http://www.quickfixengine.org/quickfix/doc/html/building.html#Windows%20(.NET)
 [1]: /help
-[2]: http://quickfixn.org/tutorial/configuration
+[2]: /tutorial/configuration

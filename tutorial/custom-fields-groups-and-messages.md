@@ -1,5 +1,10 @@
-Custom FIX
-==========
+---
+layout: page
+title: Custom FIX
+menu_title: Custom Fields, Groups, and Messages
+type: tutorial
+weight: 14
+---
 
 We often connect to parties who have modified or customized the FIX
 protocol to fit their needs.  QuickFIX/N provides us some powerful ways

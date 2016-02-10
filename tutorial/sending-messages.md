@@ -1,5 +1,10 @@
-Sending Messages
-================
+---
+layout: page
+title: Sending Messages
+menu_title: Sending Messages
+type: tutorial
+weight: 4
+---
 
 Sending FIX messages in QuickFIX/N is simple:
 

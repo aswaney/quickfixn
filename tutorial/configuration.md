@@ -1,3 +1,11 @@
+---
+layout: page
+title: Configuration
+menu_title: Configuration
+type: tutorial
+weight: 10
+---
+
 Configuring QuickFIX/N
 ========================
 

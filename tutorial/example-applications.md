@@ -1,5 +1,10 @@
-Example Applications
-====================
+---
+layout: page
+title: Example Applications
+menu_title: Example Apps
+type: tutorial
+weight: 12
+---
 
 We've made three QuickFIX/N example applications:
 

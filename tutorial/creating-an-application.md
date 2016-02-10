@@ -1,5 +1,11 @@
-Creating an Application
-=======================
+---
+layout: page
+title: Creating An Application
+nav_title: Docs
+menu_title: Creating An Application
+type: tutorial
+weight: 2
+---
 
 Creating a FIX application is easy; simply implement an `IApplication`:
 
