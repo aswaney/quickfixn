@@ -1,5 +1,11 @@
-Inquiries
-=================
+---
+layout: page
+title: Inquiries
+menu_title: Contact Us
+type: about
+weight: 10
+permalink: /about/contact/
+---
 
 For most questions, we recommend the [mailing list][0].
 

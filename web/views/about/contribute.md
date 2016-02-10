@@ -1,5 +1,11 @@
-Contribute
-==========
+---
+layout: page
+title: Contribute
+menu_title: Contribute
+type: about
+weight: 12
+permalink: /about/contribute/
+---
 
 QuickFIX/n is an open source project and we welcome your contributions to 
 the project on github. 

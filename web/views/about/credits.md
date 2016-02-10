@@ -1,3 +1,12 @@
+---
+layout: page
+title: Credits
+menu_title: Credits
+type: about
+weight: 14
+permalink: /about/credits/
+---
+
 Credits
 =======
 
@@ -21,7 +30,7 @@ Contributors
 - Kirk Kozel
 - Chris Busbey
 - Richard Young
-- Harvender Vasdev
+- Harvinder Vasdev
 - Chris Barker
 - Wesley McClure
 - Alex Martsynkevich
@@ -35,7 +44,6 @@ Contributors
 - Kevin McWhirter
 - Tomas Vetrovsky
 - Thomas Fleming
-- Harvinder Vasdev
 - Paul Kotlyar
 - Julien Roncaglia
 - Abderraouf Elgasser
@@ -47,4 +55,5 @@ Contributors
 - Timothy Caro
 - Steffan Ulfburg
 - Martin Adams
+- Austin Swaney
 

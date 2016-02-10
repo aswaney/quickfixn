@@ -1,5 +1,13 @@
-About
-=====
+---
+layout: page
+title: About
+nav_title: About
+menu_title: About Us
+type: about
+weight: 8
+permalink: /about/about-us/
+---
+
 **QuickFIX/n implements the [FIX protocol][5] on .NET.** 
 
 QuickFIX/n is 100% free and open source with a liberal [license][4].

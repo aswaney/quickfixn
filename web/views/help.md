@@ -1,5 +1,10 @@
-Get Help
-========
+---
+layout: page
+nav_title: Get Help
+title: Get Help
+weight: 6
+permalink: /help/
+---
 
 Mailing List
 ------------
