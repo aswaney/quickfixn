@@ -13,7 +13,7 @@ layout: default
     <div class="sidemenu">
       <ul>
         {% for my_page in pages %}
-          <li><a class="page-link" href="{{ my_page.url }}">{{ my_page.menu_title }}</a></li>
+          <li><a class="page-link" href="{{ my_page.url | prepend: site.github.url }}">{{ my_page.menu_title }}</a></li>
         {% endfor %}
       </ul>
     </div>
