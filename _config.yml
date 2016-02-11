@@ -2,6 +2,4 @@ title: QuickFIX/n
 description: >
   Write an awesome description.
   You can edit this in _config.yml.
-url: "http://quickfixn.org/" # the base hostname & protocol
 github_username: Connamara
-markdown: rdiscount
