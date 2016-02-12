@@ -55,6 +55,6 @@ Coupled Connamara's unique licensing model, trading firms can get the
 best of both build and buy.
 
 [0]: http://connamara.com
-[1]: /images/Connamara-Logo.png
+[1]: /web/public/images/Connamara-Logo.png
 [2]: http://lists.quickfixn.com/listinfo.cgi/quickfixn-quickfixn.com
 
