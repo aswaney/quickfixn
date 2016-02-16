@@ -1,22 +1,25 @@
 <div class="wrapper">
 
   <footer class="site-footer">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div>
-      <ul class="social-media-list">
+      <ul class="footer-nav-list">
+        <li><h2 class="footer-heading">{{ site.title }}</h2></li>
         {% if site.github_username %}
-        <li>
+        <li class="social-media">
           {% include icon-github.html username=site.github_username %}
         </li>
         {% endif %}
 
         {% if site.twitter_username %}
-        <li>
+        <li class="social-media">
           {% include icon-twitter.html username=site.twitter_username %}
         </li>
         {% endif %}
+      </ul>
+    </div>
+
+    <div>
+      <ul class="footer-nav-list">
         <li><a href='{{ site.baseurl }}/'>Home</a></li>
         <li><a href='{{ site.baseurl }}/tutorial/creating-an-application'>Documentation</a></li>
         <li><a href='{{ site.baseurl }}/help'>Issues</a></li>

@@ -1,27 +1,8 @@
 /**
-table {
-    margin:0;
-    padding:0;
-    border:0;
-    font-size:500%;
-    font:inherit;
-    vertical-align:baseline;
-    border-collapse:separate;
-    border-spacing:0;
-    margin-bottom:1.4em;
-    width:100%;
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
-    th, td {
-        vertical-align:middle;
-    }
-}
-
-
  * Site header
  */
 .site-header {
-    padding: $spacing-unit;
-    border-bottom: 1px solid $grey-color-dark;
+    padding: $spacing-unit / 2;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -38,24 +19,33 @@ table {
 }
 
 .site-nav {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 50px 0px;
+    border-bottom: 1px solid $grey-color-dark;
+    border-top: 1px solid $grey-color-dark;
+    text-align: center;
     line-height: 56px;
-    right: 0px;
-    bottom: 0px;
-    position: absolute;
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        color: $header-color;
         line-height: $base-line-height;
+        text-decoration: none;
+        font-size: 36px;
+
+        &:hover {
+            color: $hover-color;
+            cursor: pointer;
+        }
 
         // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+        &:not(:last-child) { margin-right: 20px; }
     }
+
+    #img { vertical-align: middle; }
 
     @include media-query($on-palm) {
         position: absolute;
@@ -113,23 +103,37 @@ table {
  * Site footer
  */
 .site-footer {
+    margin: 30px 0px 30px 0px;
     border-top: 1px solid $grey-color-dark;
-    padding: $spacing-unit 0;
 }
 
 .footer-heading {
+    display: inline;
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
-.social-media-list {
+.footer-nav-list {
+    margin-top: $spacing-unit / 2;
     list-style: none;
     margin-left: 0;
     li {
         display: inline;
         margin: 5px;
+        a {
+            color: $link-color;
+            text-decoration: none;
+            font-family: "Verdana", "Helvetica Neue", "Helvetica";
+            font-style: bold;
+            &:hover {
+                color: $hover-color;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
     }
+    .social-media a { color: #2a7ae2; }
 }
 
 .footer-col-wrapper {
@@ -259,4 +263,79 @@ table {
         }
     }
 }
+
+/**
+ * QuickFIX/n old layout.css
+ */
+/*
+@font-face {
+	font-family: 'Pictos';
+	src: url('pictos-web.eot');
+	src: local('☺'), url('pictos-web.woff') format('woff'), url('pictos-web.ttf') format('truetype'), url('pictos-web.svg#webfontIyfZbseF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", "Helvetica";
+    color: $header-color;
+}
+h1, h2 { font-weight: bold; }
+h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+p, ol, li {
+    font-family: "Verdana";
+    font-size: 14px;
+}
+li { margin: 10px; }
+
+th, td, caption { padding:8px 12px 8px 10px; }
+
+tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tbody tr:nth-child(odd) td, tbody tr.even td {background:white;}
+
+.default { text-align: center; }
+
+th {
+    font-weight:bold;
+    font-family: "Helvetica Neue", "Helvetica";
+    font-weight: bold;
+    background-color: #063969;
+    color:#f7f9f9;
+    text-align: center;
+    font-size: 14px;
+}
+
+td {
+    font-family: "Verdana";
+    font-size: 14px;
+}
+
+a {
+    color: #8a3514;
+    &:hover { color: #cd4c39; }
+}
+
+#top-logo {
+    text-align: center;
+    img {
+        max-height: 120px;
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+table {
+    -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+#main-content { min-height: 500px; }
+
+
+
 
