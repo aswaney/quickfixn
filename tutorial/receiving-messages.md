@@ -8,7 +8,7 @@ weight: 6
 
 Receiving messages in QuickFIX/N is type safe and simple:
 
-```c#
+```csharp
 public void OnMessage(
     QuickFix.FIX44.NewOrderSingle order, 
     SessionID sessionID)
@@ -25,7 +25,7 @@ and Field classes, which we'll mixin with `MessageCracker`. We
 import the `MessageCracker` class, inherit from it, then call `Crack`
 inside `FromApp`:
 
-```c#
+```csharp
 using QuickFix;
 
 public class MyApplication : MessageCracker, IApplication
@@ -41,7 +41,7 @@ public class MyApplication : MessageCracker, IApplication
 `Crack` will then call the appropriate overloaded `OnMessage` callback.
 This example receives orders and security definitions:
 
-```c#
+```csharp
 public void OnMessage(
     QuickFix.FIX44.NewOrderSingle ord, 
     SessionID sessionID)
@@ -63,7 +63,7 @@ Example Message Cracker
 Putting it all together, a full application with type safe orders
 looks like this:
 
-```c#
+```csharp
 public class MyApplication : MessageCracker, IApplication
 {
     public void OnMessage(
@@ -110,7 +110,7 @@ It is possible to receive message callbacks with only the base class
 **This is not recommended** - we lose the typesafe `Group` and `Field`
 properties and extra boilerplate logic is required:
 
-```c#
+```csharp
 // NOT RECOMMENDED
 public class MyApplication : IApplication
 {

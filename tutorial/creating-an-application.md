@@ -9,7 +9,7 @@ weight: 2
 
 Creating a FIX application is easy; simply implement an `IApplication`:
 
-```c#
+```csharp
 public class MyQuickFixApp : IApplication
 {
     public void FromApp(Message msg, SessionID sessionID) { }
@@ -76,7 +76,7 @@ Creating Our Application
 Putting it all together, we implement the `Application` interface then
 instantiate an `Acceptor`:
 
-```c#
+```csharp
 using QuickFix;
 
 public class MyQuickFixApp : IApplication

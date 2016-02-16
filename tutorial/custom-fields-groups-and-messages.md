@@ -233,24 +233,24 @@ In Code
 The easiest way to get a custom field from a message or group is to call
 the typed getter:
 
-```c#
+```csharp
 const int AWESOME_FIELD = 9006;
 string awsmFld = message.GetString(AWESOME_FIELD);
 ```
 
-```c#
+```csharp
 const int AWESOME_FIELD = 9006;
 string awsmFld = contraBrokersGrp.GetString(AWESOME_FIELD);
 ```
 
 For setting a custom field, we use one of the generic Field type classes:
 
-```c#
+```csharp
 const int AWESOME_FIELD = 9006;
 message.SetField(new StringField(AWESOME_FIELD, "ohai"));
 ```
 
-```c#
+```csharp
 const int AWESOME_FIELD = 9006;
 contraBrokersGrp.SetField(new StringField(AWESOME_FIELD, "ohai"));
 ```

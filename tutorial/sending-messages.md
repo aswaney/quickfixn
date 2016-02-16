@@ -8,7 +8,7 @@ weight: 4
 
 Sending FIX messages in QuickFIX/N is simple:
 
-```c#
+```csharp
 FIX44.NewOrderSingle order = new FIX44.NewOrderSingle(
     new ClOrdID("1234"),
     new Symbol("AAPL"),
@@ -40,7 +40,7 @@ BeginString=FIX.4.4
 
 There are a few patterns to gather the session.  We can grab the `SessionID` when it is created and cache it:
 
-```c#
+```csharp
 private SessionID MySessionID { get; set; }
 public void OnCreate(SessionID sessionID)
 {
@@ -50,7 +50,7 @@ public void OnCreate(SessionID sessionID)
 
 We can get the `SessionID` when responding to an incoming message:
 
-```c#
+```csharp
 public void OnMessage(FIX42.ExecutionReport execution, SessionID sessionID) 
 {
     ProcessExecution(execution, sessionID);
@@ -60,7 +60,7 @@ public void OnMessage(FIX42.ExecutionReport execution, SessionID sessionID)
 Or, we can construct a `SessionID` by matching the values from
 our config file:
 
-```c#
+```csharp
 var mySessionID = new SessionID("FIX4.4", "CONNAMARA", "CBOE");
 ```
 
@@ -70,7 +70,7 @@ Creating and Sending a Message
 The preferred constructor to use includes the specific FIX version
 and message type.  We also pass in the required fields:
 
-```c#
+```csharp
 import QuickFix;
 import QuickFix.Fields;
 
@@ -84,7 +84,7 @@ var order = new QuickFix.FIX44.NewOrderSingle(
 
 To set fields, use the message's field properties:
 
-```c#
+```csharp
 order.Price = new Price(new decimal(22.4));
 order.Account = new Account("18861112");
 ```
@@ -93,7 +93,7 @@ Putting it all together - creating the message, setting its required
 fields, setting two additional fields, using `SessionID` from the
 section above, we send the message on its way:
 
-```c#
+```csharp
 var order = new QuickFix.FIX44.NewOrderSingle(
     new ClOrdID("1234"),
     new Symbol("AAPL"),
@@ -107,8 +107,6 @@ order.Account = new Account("18861112");
 Session.SendToTarget(order, sessionID);
 ```
 
---
-
 Alternative Constructors and Field Setters
 ------------------------------------------
 
@@ -117,7 +115,7 @@ are a few other ways to create messages and set fields.
 
 Each message type has a default constructor:
 
-```c#
+```csharp
 var order = new QuickFix.FIX44.NewOrderSingle();
 order.ClOrdID =  new ClOrdID("1234");
 order.Symbol = new Symbol("AAPL");
@@ -127,21 +125,21 @@ order.Side = new Side(Side.BUY);
 We have the QuickFIX C++ and QuickFIX/J style get/set methods available,
 which are also type safe:
 
-```c#
+```csharp
 order.Set(new TransactTime(DateTime.Now));
 order.Set(new OrdType(OrdType.LIMIT));
 ```
 
 For setting a field that isn't a property of a message, use `setField`:
 
-```c#
+```csharp
 order.SetField(new Account("18861112"));
 ```
 
 Here we create base `Message` class;  it has no properties so `SetField`
 must be used everywhere.  *This style is not recommended*:
 
-```c#
+```csharp
 var order = new QuickFix.Message();
 order.Header.SetField(new MsgType("D"));
 order.SetField(new ClOrdID("1234"));
