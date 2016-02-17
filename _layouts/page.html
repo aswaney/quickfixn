@@ -2,25 +2,25 @@
 layout: default
 ---
 
-<article class="post">
-
+<div class="prepend-1 span-16">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  {% if page.type %}
-    {% assign pages = site.pages | where: 'type', page.type | sort: 'weight' %}
-    <div class="sidemenu">
-      <ul>
-        {% for my_page in pages %}
-          <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.menu_title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-
   <div class="post-content">
     {{ content }}
   </div>
+</div>
 
-</article>
+{% if page.type %}
+  <div class="span-7 last">
+    {% assign pages = site.pages | where: 'type', page.type | sort: 'weight' %}
+    <div id="side-nav">
+      <ul>
+        {% for my_page in pages %}
+          <li><a class="side-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.menu_title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}

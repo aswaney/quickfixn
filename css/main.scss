@@ -15,7 +15,7 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     20px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -53,6 +53,7 @@ $qfn-logo-small: url("/quickfixn/web/public/images/qfn-logo/QuickFIX-n_logo-smal
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "blueprint/screen",
         "base",
         "layout",
         "syntax",
