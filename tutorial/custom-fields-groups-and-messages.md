@@ -74,7 +74,7 @@ Customizing Our Data Dictionary
 -------------------------------
 
 Adding custom fields to existing messages
-=========================================
+-----------------------------------------
 
 Many counterparties' customizations are limited to only adding custom fields to existing FIX messages.
 
@@ -146,7 +146,7 @@ or your message will be rejected.
 ```
 
 Adding new messages types
-=========================
+-------------------------
 
 Some counterparies add entirely new message types to FIX.
 
@@ -182,7 +182,7 @@ that contains 3 fields (1 of which is required, the others mandatory):
 ```
 
 Adding new groups
-=================
+-----------------
 
 Groups are a little more nuanced than other parts of the Data Dictionary.
 

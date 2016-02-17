@@ -6,9 +6,6 @@ type: tutorial
 weight: 16
 ---
 
-QuickFIX .NET wrapper compatibility
-===================================
-
 QuickFIX/n is not compatible with the [QuickFIX C++ .NET wrapper][0]. This means
 you cannot simply replace the .NET wrapper DLLs with the QuickFIX/n DLL, and
 expect your existing code to compile.

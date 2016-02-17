@@ -7,9 +7,6 @@ weight: 14
 permalink: /about/credits/
 ---
 
-Credits
-=======
-
 Thanks to **Oren Miller**, the creator of QuickFIX, who imbued the FIX world 
 with a reference implementation of FIX when it desperately needed it, and who
 generously supported our efforts to bring his ideas to a native .NET 

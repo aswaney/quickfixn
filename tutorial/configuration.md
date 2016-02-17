@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Configuration
+title: Configuring QuickFIX/N
 menu_title: Configuration
 type: tutorial
 weight: 10
 ---
-
-Configuring QuickFIX/N
-========================
 
 An acceptor or initiator can maintain as many FIX sessions as you would like.  A FIX session is defined in QuickFix/N as a unique combination of a **BeginString** (the FIX version number), a **SenderCompID** (your ID), and a **TargetCompID** (the ID of your counterparty). A **SessionQualifier** can also be used to disambiguate otherwise identical sessions.
 
