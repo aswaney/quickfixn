@@ -605,7 +605,7 @@ QuickFIX Settings
 
   <tr>
     <td class='setting'>DebugFileLogPath</td>
-    <td class='description'>Directory to store ThreadedClientAcceptor thread logs.
+    <td class='description'>Directory to store ThreadedClientAcceptor thread logs.</td>
     <td class='valid'>Valid directory for storing files, must have write access</td>
     <td class='default'>Value of <tt>FileLogPath</tt> if present, else "log".</td>
   </tr>
@@ -752,7 +752,7 @@ QuickFIX Settings
 
 <a name='sample'></a>
 
-##Sample Initiator Settings File
+## Sample Initiator Settings File
 
 Here is a typical initiator settings file you might find in a firm that wants to connect to several ECNs.
 
@@ -805,7 +805,7 @@ Here is a typical initiator settings file you might find in a firm that wants to
     SocketConnectHost2=12.12.12.12
     DataDictionary=somewhere/FIX42.xml
 
-##Sample Acceptor Settings File
+## Sample Acceptor Settings File
 
 Here is a typical acceptor settings file.
 
