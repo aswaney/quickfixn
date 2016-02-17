@@ -9,13 +9,6 @@
     position: relative;
 }
 
-.site-title {
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
 .site-nav {
     padding: $spacing-unit / 2;
     border-bottom: 1px solid $grey-color-dark;
@@ -112,8 +105,9 @@
 
 .contact-list,
 .footer-nav-list {
-    margin-left: 0px;
     list-style: none;
+    margin-left: 0px;
+    text-align: center;
     li {
         display: inline;
         margin-left: 0px;
@@ -208,6 +202,28 @@
     }
 }
 
+.side-nav-list {
+    margin-top: $spacing-unit;
+    border-left: 1px solid black;
+    padding: $spacing-unit / 2;
+    list-style: none;
+}
+
+.side-nav-link {
+    a {
+        color: $link-color;
+        text-decoration: none;
+        font-family: "Verdana", "Helvetica Neue", "Helvetica";
+        font-style: bold;
+    }
+    &:hover {
+        color: $hover-color;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+
 /**
  * QuickFIX/n old layout.css
  */
@@ -279,7 +295,4 @@ table {
 }
 
 #main-content { min-height: 500px; }
-
-
-
 

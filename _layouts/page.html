@@ -15,10 +15,10 @@ layout: default
 {% if page.type %}
   <div class="span-7 last">
     {% assign pages = site.pages | where: 'type', page.type | sort: 'weight' %}
-    <div id="side-nav">
-      <ul>
+    <div>
+      <ul class="side-nav-list">
         {% for my_page in pages %}
-          <li><a class="side-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.menu_title }}</a></li>
+          <li class="side-nav-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.menu_title }}</a></li>
         {% endfor %}
       </ul>
     </div>

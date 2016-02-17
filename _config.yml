@@ -1,7 +1,4 @@
 title: QuickFIX/n
-description: >
-  Write an awesome description.
-  You can edit this in _config.yml.
 github_username: Connamara
 baseurl: /quickfixn
 kramdown:
